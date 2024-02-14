@@ -11,7 +11,7 @@ def inc_5():
     j = int(input())
     group = ''
     if i>j:
-        print("Second integer can't be less than the first")
+        print("Second integer can't be less than the first.")
     else:
 
         while i<=j:
