@@ -23,16 +23,16 @@ def brute_eq():
     y = -10
     solution = False
     
-    while x <= 10:
-        while y <= 10:
-            ifone = ((a*x) + (b*y))
-            iftwo = ((d*x) + (e*y)) 
-            if  ifone == c:
-                if iftwo ==f:
-                    solution = True
-                    print('x = ' + str(x) + ' , y = ' + str(y))
-            y +=1
-        x += 1            
+    for x in range(-10,11):
+        for y in range(-10,11):
+             
+            if a*x + b*y == c and d*x + e*y == f:
+            
+                solution = True
+                print('x = ' + str(x) + ' , y = ' + str(y))
+                break
+            
+                    
     if solution == False:
         print('There is no solution')
     
