@@ -11,14 +11,18 @@ def reverse_string():
     output = ''
     length = 0
     word = input()
+    outputfinal = ''
     while word != 'done' and word != 'Done' and word != 'd':
         
         
         while length < len(word):
             output += word[len(word)-length-1]
             length += 1
+        outputfinal += output + '\n'
         word = input()
-        print(output)
         output = ''
+        length = 0
+
+    print(outputfinal)
 if __name__ == "__main__":
     reverse_string()
